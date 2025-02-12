@@ -1,6 +1,6 @@
 @GrocyTransformingProxy_HostAddress = http://localhost:5072
 
-GET {{GrocyTransformingProxy_HostAddress}}/weatherforecast/
+GET {{GrocyTransformingProxy_HostAddress}}
 Accept: application/json
 
 ###
