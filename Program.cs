@@ -2,6 +2,7 @@ using AspNetCore.Proxy;
 using GrocyTransformingProxy;
 using GrocyTransformingProxy.Endpoints.Stock;
 using GrocyTransformingProxy.Helpers;
+using GrocyTransformingProxy.Strings;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,7 +27,7 @@ if (string.IsNullOrEmpty(baseUrl))
 
 app.UseProxies(proxies =>
 {
-	Products.MapAdd(proxies, baseUrl);
+	proxies.MapProductAdd();
 });
 
 app.RunProxy(proxy => proxy.UseHttp(baseUrl));

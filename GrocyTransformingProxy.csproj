@@ -15,7 +15,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="StringConstants.Designer.cs">
+    <Compile Update="Strings\IncomingEndpoints.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>IncomingEndpoints.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Strings\OutgoingEndpoints.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>OutgoingEndpoints.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Strings\StringConstants.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>StringConstants.resx</DependentUpon>
@@ -23,14 +33,18 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="StringConstants.resx">
+    <EmbeddedResource Update="Strings\IncomingEndpoints.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>IncomingEndpoints.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Strings\OutgoingEndpoints.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>OutgoingEndpoints.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Strings\StringConstants.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>StringConstants.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="NewFolder\" />
   </ItemGroup>
 
 </Project>

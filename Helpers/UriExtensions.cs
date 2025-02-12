@@ -1,4 +1,6 @@
-﻿namespace GrocyTransformingProxy.Helpers;
+﻿using GrocyTransformingProxy.Strings;
+
+namespace GrocyTransformingProxy.Helpers;
 
 public static class UriExtensions
 {

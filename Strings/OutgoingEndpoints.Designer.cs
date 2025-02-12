@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GrocyTransformingProxy {
+namespace GrocyTransformingProxy.Strings {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace GrocyTransformingProxy {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class StringConstants {
+    internal class OutgoingEndpoints {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal StringConstants() {
+        internal OutgoingEndpoints() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace GrocyTransformingProxy {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("GrocyTransformingProxy.StringConstants", typeof(StringConstants).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("GrocyTransformingProxy.Strings.OutgoingEndpoints", typeof(OutgoingEndpoints).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,29 +61,20 @@ namespace GrocyTransformingProxy {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GROCY-API-KEY.
+        ///   Looks up a localized string similar to api/stock/products/{0}/add.
         /// </summary>
-        internal static string API_KEY_HEADER {
+        internal static string Stock_Product_Add {
             get {
-                return ResourceManager.GetString("API_KEY_HEADER", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to GROCY_URL.
-        /// </summary>
-        internal static string BaseUrlEnvironmentVariable {
-            get {
-                return ResourceManager.GetString("BaseUrlEnvironmentVariable", resourceCulture);
+                return ResourceManager.GetString("Stock_Product_Add", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to api/stock/products/{0}.
         /// </summary>
-        internal static string ENDPOINT_Stock_Product_Detail {
+        internal static string Stock_Product_Detail {
             get {
-                return ResourceManager.GetString("ENDPOINT_Stock_Product_Detail", resourceCulture);
+                return ResourceManager.GetString("Stock_Product_Detail", resourceCulture);
             }
         }
     }

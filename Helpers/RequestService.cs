@@ -1,8 +1,9 @@
-﻿using Newtonsoft.Json;
+﻿using GrocyTransformingProxy.Strings;
+using Newtonsoft.Json;
 
 namespace GrocyTransformingProxy.Helpers;
 
-public class RequestsService(IHttpClientFactory clientFactory)
+public class RequestService(IHttpClientFactory clientFactory)
 {
 	public async Task<dynamic> RequestFromEndpoint(string endpoint, string apiKey, HttpMethod? method = null)
 	{
@@ -28,10 +29,5 @@ public class RequestsService(IHttpClientFactory clientFactory)
 
 public static class RequestServiceExtensions
 {
-	public static IServiceCollection AddRequestService(this IServiceCollection services)
-	{
-		services.AddSingleton<RequestsService>();
-		return services;
-	}
-
+	public static IServiceCollection AddRequestService(this IServiceCollection services) => services.AddSingleton<RequestService>();
 }
