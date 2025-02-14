@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Stock Product Add Param ProductId" xml:space="preserve">
+    <value>productId</value>
+  </data>
   <data name="Stock_Product_Add" xml:space="preserve">
     <value>api/stock/products/{productId}/add</value>
   </data>

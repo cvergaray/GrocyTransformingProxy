@@ -77,5 +77,14 @@ namespace GrocyTransformingProxy.Strings {
                 return ResourceManager.GetString("BaseUrlEnvironmentVariable", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to stock_label_type.
+        /// </summary>
+        internal static string Stock_Label_Type_Key {
+            get {
+                return ResourceManager.GetString("Stock Label Type Key", resourceCulture);
+            }
+        }
     }
 }

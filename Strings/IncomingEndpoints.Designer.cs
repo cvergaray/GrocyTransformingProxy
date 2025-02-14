@@ -70,6 +70,15 @@ namespace GrocyTransformingProxy.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to productId.
+        /// </summary>
+        internal static string Stock_Product_Add_Param_ProductId {
+            get {
+                return ResourceManager.GetString("Stock Product Add Param ProductId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to api/stock/products/{productId}.
         /// </summary>
         internal static string Stock_Product_Detail {

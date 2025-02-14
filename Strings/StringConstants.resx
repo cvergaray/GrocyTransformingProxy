@@ -123,4 +123,7 @@
   <data name="BaseUrlEnvironmentVariable" xml:space="preserve">
     <value>GROCY_URL</value>
   </data>
+  <data name="Stock Label Type Key" xml:space="preserve">
+    <value>stock_label_type</value>
+  </data>
 </root>
